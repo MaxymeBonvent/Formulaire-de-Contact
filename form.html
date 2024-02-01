@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- TITLE -->
+        <h1>Contact Form</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- CONTACT FORM -->
+        <form method="post" action="send_email.php">
+
+            <!-- WRITER NAME -->
+            <div>
+                <label for="writer_name">Writer's Name</label>
+                <input id="writer_name" type="text" name="writer_name" autocomplete="name" placeholder="Your name" required>
+            </div>
+
+            <!-- WRITER MAIL -->
+            <div>
+                <label for="writer_email">Writer's Email <br> <span style="color:goldenrod;">Hotmail addresses only</span></label>
+                <input id="writer_email" type="email" name="writer_email" autocomplete="email" placeholder="your.adress@example.com" required>
+            </div>
+
+            <!-- WRITER PASSWORD -->
+            <div>
+                <label for="password">Writer's Password</label>
+                <input id="password" type="password" name="writer_password" autocomplete="off" placeholder="**********" required>
+            </div>
+
+            <!-- RECIPIENT NAME -->
+            <div>
+                <label for="recipient_name">Recipient's Name</label>
+                <input id="recipient_name" type="text" name="recipient_name" autocomplete="name" placeholder="Their name" required>
+            </div>
+
+            <!-- RECIPIENT MAIL -->
+            <div>
+                <label for="recipient_email">Recipient's Email</label>
+                <input id="recipient_email" type="email" name="recipient_email" autocomplete="email" placeholder="their.adress@example.com" required>
+            </div>
+
+            <!-- SUBJECT -->
+            <div>
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" name="subject" autocomplete="on" placeholder="Your message topic" required>
+            </div>
+            
+
+            <!-- MESSAGE -->
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" cols="20" rows="10" placeholder="Your full message here."></textarea>
+            </div>  
+
+            <div>
+                <!-- SUBMIT BUTTON -->
+                <input class="btn" type="submit" value="Submit">
+
+                <!-- SUBMIT BUTTON -->
+                <input class="btn" type="reset" value="Reset">
+            </div>
+
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; Maxyme Bonvent</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* PAGE BODY */
+body{
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITLES AND TEXTS */
+h1, p, label{
+    color: white;
+}
+
+/* MAIN */
+main{
+    width: 30%;
+    text-align: center;
+}
+
+/* FORM */
+form{
+    border: 2px solid dodgerblue;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FORM DIVS */
+form div{
+    width: 90%;
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* DIV DU MESSAGE */
+form div:nth-child(7){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FORM BUTTONS */
+.btn:hover{
+    cursor: pointer;
+}
+
+/* VERSION TRÈS PETIT */
+@media all and (max-width: 359px){
+    /* TITRE */
+    h1{
+        font-size: 24px;
+    }
+
+    /* LABELS ET TEXTE */
+    label, p{
+        font-size: 16px;
+    }
+
+    /* MAIN */
+    main{
+        width: 90%;
+    }
+
+    /* INPUT FIELDS */
+    form div input{
+        width: 30%;
+    }
+
+    /* MESSAGE */
+    form div textarea{
+        width: 50%;
+    }
+
+    /* PLACEHOLDERS */ 
+    input::placeholder{
+        font-size: 14px;
+    }
+
+    /* FORM BUTTONS */
+    .btn{
+        width: 35%;
+    }
+}
+
+/* VERSION PETIT */
+@media all and (min-width: 360px) and (max-width: 415px){
+    /* TITRE */
+    h1{
+        font-size: 24px;
+    }
+
+    /* LABELS ET TEXTE */
+    label, p{
+        font-size: 18px;
+    }
+
+    /* MAIN */
+    main{
+        width: 90%;
+    }
+
+    /* INPUT FIELDS */
+    form div input{
+        width: 30%;
+    }
+
+    /* PLACEHOLDERS */ 
+    input::placeholder{
+        font-size: 14px;
+    }
+
+    /* FORM BUTTONS */
+    .btn{
+        width: 35%;
+    }
+}
+
+/* VERSION MOYEN */
+@media all and (min-width: 416px) and (max-width: 820px){
+    /* LABELS ET TEXTE */
+    label, p{
+        font-size: 22px;
+    }
+
+    /* MAIN */
+    main{
+        width: 90%;
+    }
+
+    /* INPUT FIELDS */
+    form div input{
+        width: 30%;
+    }
+
+    /* PLACEHOLDERS */ 
+    input::placeholder{
+        font-size: 16px;
+    }
+
+    /* FORM BUTTONS */
+    .btn{
+        width: 20%;
+    }
+}
+
+/* VERSION GRAND */
+@media all and (min-width: 821px) and (max-width:1280px){
+    /* LABELS ET TEXTE */
+    label, p{
+        font-size: 32px;
+    }
+
+    /* MAIN */
+    main{
+        width: 90%;
+    }
+
+    /* INPUT FIELDS */
+    form div input{
+        width: 30%;
+    }
+
+    /* PLACEHOLDERS */ 
+    input::placeholder{
+        font-size: 22px;
+    }
+
+    /* FORM BUTTONS */
+    .btn{
+        width: 20%;
+        font-size: 30px;
+    }
+}
